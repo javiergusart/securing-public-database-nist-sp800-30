@@ -2,14 +2,15 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [System Description and Scope](#system-description-and-scope)
-3. [Purpose](#purpose)
-4. [Risk Assessment](#risk-assessment)
+2. [Scenario](#scenario)
+3. [System Description and Scope](#system-description-and-scope)
+4. [Purpose](#purpose)
+5. [Risk Assessment](#risk-assessment)
    - [Risk Assessment Table](#risk-assessment-table)
-5. [Approach](#approach)
-6. [Remediation Strategy](#remediation-strategy)
-7. [Conclusion](#conclusion)
-8. [References](#references)
+6. [Approach](#approach)
+7. [Remediation Strategy](#remediation-strategy)
+8. [Conclusion](#conclusion)
+9. [References](#references)
 
 ---
 
@@ -17,8 +18,15 @@
 
 This portfolio project was completed as part of the Google Cybersecurity Professional Certificate. It demonstrates practical risk analysis using NIST SP 800-30 Rev. 1 to secure a public database server in an e-commerce scenario, with actionable security recommendations.
 
-
 The project documents the process of identifying and mitigating risks associated with a publicly accessible database server for an e-commerce company. The assessment follows the NIST SP 800-30 Rev. 1 risk management framework and demonstrates how to communicate technical risks and actionable recommendations to business stakeholders.
+
+---
+
+## Scenario
+
+The e-commerce company relies on a remote database server to store sensitive business and customer information. Employees worldwide access the server to query data for customer insights and business operations. However, the server has been publicly accessible since the company’s launch, allowing unrestricted access from any location. This configuration introduces significant vulnerabilities, including the risk of data exfiltration by competitors, Denial of Service (DoS) attacks by hackers, and accidental or malicious data alteration by privileged users.
+
+For example, a competitor could exploit the server’s public access to extract valuable customer data, gaining an unfair advantage in the market. Similarly, an outsider could launch a DoS attack, disrupting business operations and preventing employees from accessing critical data. Additionally, a compromised privileged user account could lead to the deletion or alteration of critical business information, impacting the company’s ability to function effectively.
 
 ---
 
@@ -26,11 +34,11 @@ The project documents the process of identifying and mitigating risks associated
 
 - **System Description:**
 
-The company’s remote database server is a critical asset, running on a modern Linux OS with MySQL, 128GB RAM, and SSL/TLS encryption. Employees worldwide access the server to query customer and business data. The server has been open to the public since launch, allowing unrestricted access from any location.
+  The company’s remote database server is a critical asset, running on a modern Linux OS with MySQL, 128GB RAM, and SSL/TLS encryption. Employees worldwide access the server to query customer and business data. The server has been open to the public since launch, allowing unrestricted access from any location.
 
 - **Scope:**
   
-This assessment focuses on the confidentiality, integrity, and availability of the data on the database server. Physical security and other IT systems are out of scope.
+  This assessment focuses on the confidentiality, integrity, and availability of the data on the database server. Physical security and other IT systems are out of scope.
 
 ---
 
